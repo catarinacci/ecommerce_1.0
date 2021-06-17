@@ -1,4 +1,4 @@
-<header class="bg-trueGray-700">
+<header class="bg-trueGray-700 sticky top-0">
     <div class="container flex items-center h-16">
 
         <a class="flex flex-col items-center justify-center px-4 bg-white bg-opacity-25 text-white cursor-pointer font-semibold h-full">
