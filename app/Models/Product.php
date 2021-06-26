@@ -41,7 +41,7 @@ class Product extends Model
     // Relación de uno a muchos polimórfica
     public function images()
     {
-        return $this->MorphToMany(Image::class, "imageable");
+        return $this->morphMany(Image::class, "imageable");
     }
 
          
