@@ -24,7 +24,7 @@ class Category extends Model
     } 
 
 
-    // Relación a tavéz de 
+    // Relación a tavéz de (polimórfica)
     public function products()
     {
         return $this->hasManyThrough(Product::class, Subcategory::class);

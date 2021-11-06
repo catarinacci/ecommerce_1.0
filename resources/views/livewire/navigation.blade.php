@@ -25,6 +25,7 @@
 
         <!-- Settings Dropdown -->
         <div class="mx-6 relative hidden md:block">
+            
             @auth
                 <x-jet-dropdown align="right" width="48">
                     <x-slot name="trigger">
