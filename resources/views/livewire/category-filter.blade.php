@@ -47,7 +47,7 @@
                             <article>
                                 <div class="py-4 px-6">
                                     <h1 class="text-lg font-semibold">
-                                        <a href="">
+                                        <a href="{{route('products.show',$product)}}">
                                             {{Str::limit($product->name, 20)}}
                                         </a>
                                     </h1>
@@ -58,7 +58,7 @@
                     @endforeach
                 </ul>
             @else
-                <ul>
+                <ul class="grid grid-cols-1">
                     @foreach ($products as $product)
                         <li class="bg-white rounded-lg shadow mb-4">
                             <article class="flex">
@@ -66,7 +66,7 @@
                                     <img class="h-48 w-56 rounded-l-lg shadow object-cover object-center" src="{{Storage::url($product->images->first()->url)}}" alt="">
                                 </figure>
                                 <div class="flex-1 py-4 px-6 flex flex-col">
-                                    <div class="flex justify-between">
+                                    <div class="md:flex justify-between">
                                         <div>
                                             <h1 class="text-lg font-semibold text-gray-700">
                                                     {{Str::limit($product->name, 20)}}                                           
@@ -96,9 +96,9 @@
                                       
                                     </div>
                                     <div class="mt-auto mb-6">
-                                        <x-jet-danger-button>
+                                        <x-danger-enlace href="{{route('products.show',$product)}}">
                                             Más información
-                                        </x-jet-danger-button>
+                                        </x-danger-enlace>
                                     </div>
                                 </div>
                             </article>
