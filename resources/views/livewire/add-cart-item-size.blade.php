@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div x-data>
     <div >
         <p class="text-xl text-gray-700">Talla:</p>
@@ -50,4 +51,8 @@
             </x-button>
         </div>
     </div>
+=======
+<div>
+    {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
+>>>>>>> ae4c9765a5239edb4a9964ede06a4b988b77b14b
 </div>

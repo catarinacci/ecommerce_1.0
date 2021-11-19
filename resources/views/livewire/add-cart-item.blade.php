@@ -18,7 +18,11 @@
             <span class="mx-2 text-gray-700">{{$qty}}</span>
             
             <x-jet-secondary-button 
+<<<<<<< HEAD
             x-bind:disabled="$wire.qty >= $wire.quantity"
+=======
+            x-bind:disabled="$wire.qty >= $wire.Ñquantity"
+>>>>>>> ae4c9765a5239edb4a9964ede06a4b988b77b14b
             wire:loading.attr="disabled"
             wire:target="increment"
             wire:click="increment">

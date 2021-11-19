@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+<<<<<<< HEAD
 use App\Models\Size;
 
 class AddCartItemSize extends Component
@@ -29,6 +30,11 @@ class AddCartItemSize extends Component
         $this->sizes = $this->product->sizes;
     }
 
+=======
+
+class AddCartItemSize extends Component
+{
+>>>>>>> ae4c9765a5239edb4a9964ede06a4b988b77b14b
     public function render()
     {
         return view('livewire.add-cart-item-size');
