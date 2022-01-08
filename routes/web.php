@@ -5,6 +5,7 @@ use App\Http\Controllers\WelcomeController;
 use App\Models\Category;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use Gloudemans\Shoppingcart\Facades\Cart;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,6 @@ Route::get('products/{product}',[ProductController::class, 'show'])->name('produ
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+Route::get('prueba', function () {
+    Cart::destroy();
+});
