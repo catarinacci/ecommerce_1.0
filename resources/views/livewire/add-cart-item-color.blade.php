@@ -3,11 +3,7 @@
     <select wire:model='color_id' class="form-control w-full">
         <option value="" selected disabled>Seleccionar un color</option>
         @foreach ($colors as $color)
-<<<<<<< HEAD
             <option value="{{ $color->id }}">{{ __($color->name) }}</option>
-=======
-            <option value="{{ $color->id }}">{{ $color->name }}</option>
->>>>>>> ae4c9765a5239edb4a9964ede06a4b988b77b14b
         @endforeach
     </select>
 
@@ -33,7 +29,10 @@
 
         <div class="flex-1">
             <x-button color='orange' class="w-full"
-                x-bind:disabled="!$wire.quantity">
+                x-bind:disabled="!$wire.quantity"
+                wire:click="addItem"
+                wire:loading.attr="disabled"
+                wire:target="addItem">
                 AGREGAR AL CARRITO DE COMPRAS
             </x-button>
         </div>

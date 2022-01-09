@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div x-data>
     <div >
         <p class="text-xl text-gray-700">Talla:</p>
@@ -46,13 +45,13 @@
 
         <div class="flex-1">
             <x-button color='orange' class="w-full"
-                x-bind:disabled="!$wire.quantity">
+                x-bind:disabled="!$wire.quantity"
+                wire:click="addItem"
+                wire:loading.attr="disabled"
+                wire:target="addItem">
                 AGREGAR AL CARRITO DE COMPRAS
             </x-button>
         </div>
     </div>
-=======
-<div>
-    {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
->>>>>>> ae4c9765a5239edb4a9964ede06a4b988b77b14b
 </div>
+

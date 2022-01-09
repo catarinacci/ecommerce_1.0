@@ -51,7 +51,7 @@
                                             {{Str::limit($product->name, 20)}}
                                         </a>
                                     </h1>
-                                    <p class="font-bold text-trueGray-700">US$ {{$product->price}}</p>
+                                    <p class="font-bold text-trueGray-700">USD {{$product->price}}</p>
                                 </div>
                             </article>
                         </li>
@@ -71,7 +71,7 @@
                                             <h1 class="text-lg font-semibold text-gray-700">
                                                     {{Str::limit($product->name, 20)}}                                           
                                             </h1>
-                                            <p class="font-bold text-trueGray-700">US$ {{$product->price}}</p>
+                                            <p class="font-bold text-trueGray-700">USD {{$product->price}}</p>
                                         </div>
                                         <div class="flex items-center">
                                             <ul class="flex text-sm">

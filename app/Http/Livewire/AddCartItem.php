@@ -10,7 +10,10 @@ class AddCartItem extends Component
 {
     public $product, $quantity;
     public $qty=1;
-    public $options=[];
+    public $options=[
+        'color_id' => null,
+        'size_id' => null
+    ];
 
     public function mount(){
         $this->quantity = $this->product->quantity;
@@ -33,6 +36,7 @@ class AddCartItem extends Component
                     'weight' => 550,
                     'options' => $this->options,
                 ]);
+        $this->emitTo('dropdown-cart', 'render');
     }
 
     public function render()
