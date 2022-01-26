@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\District;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use phpDocumentor\Reflection\Types\This;
 
 class DistrictFactory extends Factory
 {
@@ -22,7 +23,7 @@ class DistrictFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->word()
         ];
     }
 }
